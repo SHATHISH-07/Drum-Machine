@@ -129,7 +129,7 @@ function App() {
       document.removeEventListener("keydown", handleKeyPress);
     }
     return () => document.removeEventListener("keydown", handleKeyPress);
-  }, [powerOn, soundGroup]);
+  }, [powerOn, soundGroup, volume]);
 
   const handleKeyPress = (event) => {
     if (powerOn) {
